@@ -1,9 +1,9 @@
-import 'aos/dist/aos.css';
-import '../styles/globals.scss'
+import "aos/dist/aos.css";
+import "../styles/globals.scss";
 import Head from "next/head";
 
 import useWindowSize from "../hooks/useWindowDimensions";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 import AOS from "aos";
 
@@ -15,7 +15,7 @@ function App({ Component, pageProps }) {
       duration: 2000,
       easing: "smooth",
       once: true,
-      mirror: true
+      mirror: true,
     });
     AOS.refresh();
   }, []);
@@ -23,30 +23,48 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover"
+        />
 
-        <title>Revolicon - Beautifully Crafted Open Source Icons</title>
-        <meta name="title" content="Revolicon - Beautifully Crafted Open Source Icons" />
-        <meta name="description" content="Revolicon is an open-source icon library. It is designed for consistency and accessibility. The icons are carefully crafted for you to work seamlessly." />
-        <meta name="keywords" content="Revolicon, Font Icon, Web Icon, Icons, Icon, SVG Icon, SVG, Font, Revolution" />
+        <title>K-Noon</title>
+        <meta name="title" content="K-Noon" />
+        <meta
+          name="description"
+          content="K-Noon is still a private project for now. Wait for the Launch"
+        />
+        <meta
+          name="keywords"
+          content="K-Noon, Font Icon, Web Icon, Icons, Icon, SVG Icon, SVG, Font, K-Noon"
+        />
 
         <meta property="og:site_name" content="Revolicon" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://revolicon.com/" />
-        <meta property="og:title" content="Revolicon - Beautifully Crafted Open Source Icons" />
-        <meta property="og:description" content="Revolicon is an open-source icon library. It is designed for consistency and accessibility. The icons are carefully crafted for you to work seamlessly." />
+        <meta property="og:url" content="https://k-noon.tn/" />
+        <meta
+          property="og:title"
+          content="K-Noon, Font Icon, Web Icon, Icons, Icon, SVG Icon, SVG, Font, K-Noon"
+        />
+        <meta
+          property="og:description"
+          content="K-Noon, Font Icon, Web Icon, Icons, Icon, SVG Icon, SVG, Font, K-Noon"
+        />
         <meta property="og:image" content="/thumbnail.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://revolicon.com/" />
-        <meta property="twitter:title" content="Revolicon - Beautifully Crafted Open Source Icons" />
-        <meta property="twitter:description" content="Revolicon is an open-source icon library. It is designed for consistency and accessibility. The icons are carefully crafted for you to work seamlessly." />
+        <meta property="twitter:url" content="https://k-noon.tn" />
+        <meta property="twitter:title" content="K-Noon" />
+        <meta
+          property="twitter:description"
+          content="K-Noon is still a private project for now. Wait for the Launch"
+        />
         <meta property="twitter:image" content="/thumbnail.png" />
       </Head>
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
